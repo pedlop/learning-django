@@ -18,3 +18,5 @@ def post_boot(request) :
     posts = Post.objects.all()
     return render(request, 'post_boot.html', {'posts' : posts})
 
+def login(request) :
+    return render(request, 'login.html')

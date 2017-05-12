@@ -19,7 +19,8 @@ from blog import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.post_list, name='Posts'),
+    url(r'^$', views.post_list, name='posts'),
     url(r'^(?P<id>\d+)/', views.post),
     url(r'^post_boot/', views.post_boot, name='boot'),
+    url(r'^login/', views.login, name="login"),
 ]

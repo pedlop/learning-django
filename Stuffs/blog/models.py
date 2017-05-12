@@ -9,3 +9,4 @@ class Post(models.Model) :
     text = models.TextField()
     created_at = models.DateTimeField(auto_now = True)
     author = models.ForeignKey('auth.User')
+    
